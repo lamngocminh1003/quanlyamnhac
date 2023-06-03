@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kho Âm Nhạc</title>
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href=""><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-items header__navbar-item-has-qr header__navbar-items--separate">
+                            Vào ngay Kho Âm Nhạc trên cửa hàng ứng dụng
+                            <!--Header QR Code-->
+                            <div class="header__qr">
+                                <img src="./assets/img/d91264e165ed6facc6178994d5afae79.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/39f189e19764dab688d3850742f13718.png" alt="Appstore" class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/f4f5426ce757aea491dce94201560583.png" alt="Google Plays" class="header__qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-items">
+                            <span class="header__navbar-title--nopointer">
+                                Kết Nối
+                            </span>
+                            <a href="" class="header__navbar-icon-link">
+                                <a href="" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                                </a>  
+                                <a href="" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fa-brands fa-instagram"></i>                                   
+                                </a>                        
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <!--<ul class="header__navbar-list">
+                        <li class="header__navbar-items header__navbar-items--has-notify ">
+                            <a href="" class="header__navbar-item-link">
+                                Thông Báo
+                                <a href="" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon far fa-bell"></i>
+                                </a>                           
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>
+                                        Thông Báo Mới Nhận
+                                    </h3>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-items header__notify-items--viewed ">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://kenh14cdn.com/thumb_w/620/203336854389633024/2023/2/21/photo-6-1676955942202624947037.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Boygroup huyền thoại 911 khẳng định: "BTS chính là The Beatles của thế hệ mới"</span>
+                                                    <span class="header__notify-des">Chúng tôi đã có cuộc trò chuyện nhiều niềm vui với 3 thành viên 911 trong dịp họ đến Việt Nam để kết hợp cùng Đức Phúc trong MV Em Đồng Ý (I Do).</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-items header__notify-items--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://kenh14cdn.com/203336854389633024/2023/2/21/photo-2-1676955529213900173769.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Sơn Tùng M-TP cover hit từ 17 năm trước nhưng bị chê hát phô, phá hỏng bản gốc?</span>
+                                                    <span class="header__notify-des">Đoạn clip cover của Sơn Tùng M-TP dù đạt hàng triệu lượt xem nhưng vẫn vấp phải tranh cãi của cư dân mạng.</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-items header__notify-items--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://phunuvietnam.mediacdn.vn/179072216278405120/2023/2/21/33251374313503968723911557485897619168186110n-16769493245851422925825.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Huyền thoại âm nhạc Kitaro đã đặt chân đến Việt Nam để chuẩn bị concert Hà Anh Tuấn</span>
+                                                    <span class="header__notify-des">Chắc hẳn màn kết hợp giữa Kitaro và Hà Anh Tuấn rất đáng để khán giả mong chờ!</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-items header__notify-items--viewed ">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://media.vov.vn/sites/default/files/styles/large/public/2023-02/mv_like_this_like_that_toc_tien_-_tlinh_1.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Tóc Tiên và tlinh đọ sắc "một chín một mười" trong MV mới</span>
+                                                    <span class="header__notify-des">"Like This Like That" đánh dấu lần kết hợp đầu tiên giữa Tóc Tiên và dàn nghệ sĩ Gen Z.</span>
+                                                </div>
+                                            </a>        
+                                        </li>
+                                        <li class="header__notify-items header__notify-items--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://kenh14cdn.com/thumb_w/620/203336854389633024/2023/2/21/snapinstaapp1080318456228860544878611394630491818160966195n-16769426310031972113379-16769449900981282004048.jpg " alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">YG: MV solo của Jisoo đang quay hình ở nước ngoài, con số đầu tư sẽ hơn 11 tỷ đồng?</span>
+                                                    <span class="header__notify-des">Thông báo mới nhất từ YG về màn solo của Jisoo đã khiến các fan không khỏi hồi hộp chờ đón.</span>
+                                                </div>
+                                            </a>                                            
+                                        </li>
+                                    </ul>
+                                    <footer class="header__notify-footer">
+                                        <a href="" class="header__notify-footer-btn">Xem Tất Cả</a>
+                                    </footer>
+                                </header>
+                            </div>
+                        </li>
+    
+                        <li class="header__navbar-items">
+                            <a href="" class="header__navbar-item-link">
+                                Trợ Giúp
+                                <a href="" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                                </a>                               
+                            </a>
+                        </li>-->
+    
+                        <!--<li class="header__navbar-items header__navbar-items--strong header__navbar-items--separate">Đăng Ký</li>
+    
+                        <li class="header__navbar-items header__navbar-items--strong">Đăng Nhập</li>-->
+                        <li class="header__navbar-items header__navbar-user">
+                            <img src="/assets/img/trung" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">
+                                Quốc Trung
+                            </span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav> 
+                
+                <!--header with search-->
+                <div class="header-with-search">
+                    <a href="/" class="header__logo-link">
+                        <div class="header__logo">
+                            <img src="/assets/img/music.png" alt="Logo" class="header__logo-img" title="Nơi lưu trữ các bài hát phong phú và chất lượng">
+                        </div>
+                    </a>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát,...">
+                            <!--search history-->
+                            <!--<div class="header__search-history">
+                                <h3 class="header__search-history-heading">
+                                    Lịch sử tìm kiếm
+                                </h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-items">
+                                        <a href="">tlinh tóc tiên</a>
+                                    </li>
+                                    <li class="header__search-history-items">
+                                        <a href="">baby shark</a>
+                                    </li>
+                                    <li class="header__search-history-items">
+                                        <a href="">luôn yên đời</a>
+                                    </li>
+                                </ul>
+                            </div>-->
+                        </div>
+                        <div class="header__search-category">
+                            <span class="header__search-category-label">Thể Loại</span>
+                            <i class="header__search-category-icon fa-regular fa-bookmark"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>USUK</span>
+                                    <i class="fa-solid fa-certificate"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Trẻ Em</span>
+                                    <i class="fa-solid fa-certificate"></i>                
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Kpop</span>
+                                    <i class="fa-solid fa-certificate"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Việt Nam</span>
+                                    <i class="fa-solid fa-certificate"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Rap</span>
+                                    <i class="fa-solid fa-certificate"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="search-btn">
+                            <i class="search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <!--List song layout
+                    <div class="header__listsong">
+                        <div class="header__listsong-wrap">
+                            <i class="header__listsong-icon  fa-solid fa-headphones" title="Playlist"></i>
+                            <span class="header__listsong-notice">3</span>-->
+
+                            <!--No cart header__listsong-list--no-list-->
+                            <!--<div class="header__listsong-list  ">
+                                <img src="./assets/img/Sweet.png" alt="" class="header__listsong-no-song-img">
+
+                                <h4 class="header__listsong-heading">
+                                    Bài hát đã thêm
+                                </h4>
+                                <ul class="header__listsong-list-item">-->
+                                    <!--listsong item-->
+                                    <!--<li class="header__listsong-items">
+                                        <img src="https://th.bing.com/th?id=A35b3449edfbbdb0ef29db9d8f3a62e14&w=212&h=212&c=8&qlt=80&o=6&dpr=1.3&pid=AWE" alt="" class="header__listsong-img">
+                                        <div class="header__listsong-item-info">
+                                            <div class="header__listsong-iteams-head">
+                                                <h5 class="header__listsong-name">Masscara</h5>
+                                            </div>
+                                            <div class="header__listsong-iteams-body">
+                                                <span class="header__listsong-des">Trình bày: Chillies</span>
+                                                <span class="header__listsong-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__listsong-items">
+                                        <img src="https://consequence.net/wp-content/uploads/2023/01/miley-flowers-header.jpeg" alt="" class="header__listsong-img">
+                                        <div class="header__listsong-item-info">
+                                            <div class="header__listsong-iteams-head">
+                                                <h5 class="header__listsong-name">Flowers</h5>
+                                            </div>
+                                            <div class="header__listsong-iteams-body">
+                                                <span class="header__listsong-des">Trình Bày: Milley Cyrus</span>
+                                                <span class="header__listsong-remove">Xóa</span>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="header__listsong-items">
+                                        <img src="https://th.bing.com/th/id/OIP.sRWsedxl0yRVn1UkdKMlkAHaEc?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="header__listsong-img">
+                                        <div class="header__listsong-item-info">
+                                            <div class="header__listsong-iteams-head">
+                                                <h5 class="header__listsong-name">Baby Shark</h5>
+                                            </div>
+                                            <div class="header__listsong-iteams-body">
+                                                <span class="header__listsong-des">Trình bày: PINKFONG</span>
+                                                <span class="header__listsong-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class=" header__listsong-viewlistsong btn btn--primary">
+                                    Xem Play List
+                                </a>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </header>
+
+        <div class="app_container">
+            <div class="grid">
+                <div class="grid__row app_content">
+                        <div class="grid__column-2">
+                            <nav class="category">
+                                <h3 class="category_heading">
+                                    <i class="category-heading-icon fa-solid fa-list"></i>
+                                    Danh mục
+                                </h3>
+                                <ul class="category-list">
+                                    <li class="category-item category-item--active">
+                                        <a href="" class="category-item_link">
+                                            <i class=" category-item-icon fa-solid fa-music"></i>
+                                            All Songs
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item_link">
+                                            <i class="category-item-icon fa-solid fa-music"></i>
+                                            My List Songs
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="grid__column-10">
+                            <div class="home-filter">
+                                <!--<span class="home-filter__label">
+                                    Sắp xếp theo
+                                </span>
+                                <button class="home-filter__btn btn">Thịnh hành</button>
+                                <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+
+                                <div class="select-input">
+                                    <span class="select-input__label">
+                                        Tất cả
+                                    </span>
+                                    <span>
+                                        <i class=" select-input__icon fa-solid fa-chevron-down"></i>
+                                    </span>-->
+                                    <!--List option-->
+                                    <!--<ul class="select-input__list">
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">Tất cả</a>
+                                        </li>
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">Nước ngoài</a>
+                                        </li>
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">Trong nước</a>
+                                        </li>
+                                    </ul>
+                                </div>-->
+                                <div class="home-filter__page">
+                                    <span class="home-filter__page-num">
+                                        <span class="home-filter__page-current">1</span>/2
+                                    </span>
+                                    <div class="home-filter__page-control">
+                                        <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                            <i class="home-filter__page-icon fa-solid fa-angle-left"></i>
+                                        </a>
+                                        <a href="" class="home-filter__page-btn">
+                                            <i class="home-filter__page-icon fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                            <div class="home-song">
+                                <div class="grid__row">
+                                    <div class="grid__column-2-4">
+                                        <div class="home-song-items">
+                                            <!--song item-->
+                                            <a href="" class="home--song-item-link">
+                                                <div class="home--song-item__img" style="background-image: url(https://th.bing.com/th?id=A35b3449edfbbdb0ef29db9d8f3a62e14&w=212&h=212&c=8&qlt=80&o=6&dpr=1.3&pid=AWE);"></div>
+                                                <h4 class="home--song-item__name">Masscara</h4>
+                                                <div class="home--song-item__singer">Trình bày: Chillies</div>
+                                            </a>
+                                            <div class="home-song-item__action">
+                                                <span class="home-song-item__like home-song-item__like--liked">
+                                                    <i class="fa-regular fa-heart  home-song-item__like--liked-icon-empty"></i>
+                                                    <i class="fa-solid fa-heart home-song-item__like--liked-icon-fill"></i>
+                                                </span>
+                                                <a href="" class="home--song-item-link">
+                                                    <div class="home-song-item__rating">
+                                                        <i class="home-song-item__star--gold fa-solid fa-star"></i>
+                                                        <i class="home-song-item__star--gold fa-solid fa-star"></i>
+                                                        <i class="home-song-item__star--gold fa-solid fa-star"></i>
+                                                        <i class="home-song-item__star--gold fa-solid fa-star"></i>
+                                                        <i class="home-song-item__star--gold fa-solid fa-star"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="home-song-item__category">
+                                                <a href="" class="home-song-item__category-link">Việt Nam</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid__column-2-4">
+                                        <div class="home-song-items">
+                                            <!--song item-->
+                                            <a href="" class="home--song-item-link">
+                                                <div class="home--song-item__img" style="background-image: url(https://consequence.net/wp-content/uploads/2023/01/miley-flowers-header.jpeg);"></div>
+                                                <h4 class="home--song-item__name">Flowers</h4>
+                                                <div class="home--song-item__singer">Trình bày: Milley Cyrus</div>
+                                            </a>
+                                                <div class="home-song-item__action">
+                                                    <span class="home-song-item__like home-song-item__like--liked">
+                                                        <i class="fa-regular fa-heart  home-song-item__like--liked-icon-empty"></i>
+                                                        <i class="fa-solid fa-heart home-song-item__like--liked-icon-fill"></i>
+                                                    </span>
+                                                    <a href="" class="home--song-item-link">
+                                                        <div class="home-song-item__rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="home-song-item__category">
+                                                    <a href="" class="home-song-item__category-link">USUK</a>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid__column-2-4">
+                                        <div class="home-song-items">
+                                            <!--song item-->
+                                            <a href="" class="home--song-item-link">
+                                                <div class="home--song-item__img" style="background-image: url(https://th.bing.com/th/id/OIP.OwwQaoHZDZJnadQlkbpSnAHaEE?w=295&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);"></div>
+                                                <h4 class="home--song-item__name">Trốn tìm</h4>
+                                                <div class="home--song-item__singer">Trình bày: Đen ft.MTV</div>
+                                            </a>
+                                            <div class="home-song-item__action">
+                                                <span class="home-song-item__like home-song-item__like--liked">
+                                                    <i class="fa-regular fa-heart  home-song-item__like--liked-icon-empty"></i>
+                                                    <i class="fa-solid fa-heart home-song-item__like--liked-icon-fill"></i>
+                                                </span>
+                                                <a href="" class="home--song-item-link">
+                                                    <div class="home-song-item__rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="home-song-item__category">
+                                                <a href="" class="home-song-item__category-link">Rap</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid__column-2-4">
+                                        <div class="home-song-items">
+                                            <!--song item-->
+                                            <a href="" class="home--song-item-link">
+                                                <div class="home--song-item__img" style="background-image: url(https://th.bing.com/th/id/OIP.sRWsedxl0yRVn1UkdKMlkAHaEc?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);"></div>                                            
+                                                <h4 class="home--song-item__name">Baby Shark</h4>
+                                                <div class="home--song-item__singer">Trình bày: PINGFONG</div>
+                                            </a>
+                                            <div class="home-song-item__action">
+                                                <span class="home-song-item__like home-song-item__like--liked">
+                                                    <i class="fa-regular fa-heart  home-song-item__like--liked-icon-empty"></i>
+                                                    <i class="fa-solid fa-heart home-song-item__like--liked-icon-fill"></i>
+                                                </span>
+                                                <a href="" class="home--song-item-link">
+                                                    <div class="home-song-item__rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="home-song-item__category">
+                                                <a href="" class="home-song-item__category-link">Trẻ Em</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid__column-2-4">
+                                        <div class="home-song-items">
+                                            <!--song item-->
+                                            <a href="" class="home--song-item-link">
+                                                <div class="home--song-item__img" style="background-image: url(https://tse1.mm.bing.net/th?id=OIP.wNMY3D18KKICDYYkyvnO1AHaE8&pid=Api&P=0);"></div>                                            
+                                                <h4 class="home--song-item__name">OMG</h4>
+                                                <div class="home--song-item__singer">Trình bày: New Jeans</div>
+                                            </a>
+                                            <div class="home-song-item__action">
+                                                <span class="home-song-item__like home-song-item__like--liked">
+                                                    <i class="fa-regular fa-heart  home-song-item__like--liked-icon-empty"></i>
+                                                    <i class="fa-solid fa-heart home-song-item__like--liked-icon-fill"></i>
+                                                </span>
+                                                <a href="" class="home--song-item-link">
+                                                    <div class="home-song-item__rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="home-song-item__category">
+                                                <a href="" class="home-song-item__category-link">Kpop</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="grid__column-2-4 ">
+                                        <div class="home-song-items">
+                                            <!--song item-->
+                                            <a href="" class="home--song-item-link">
+                                                <div class="home--song-item__img" style="background-image: url(https://th.bing.com/th/id/OIP.NVsS-vmd926MYio01sfWQwHaHa?w=174&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);"></div>
+                                                <h4 class="home--song-item__name">Bigcityboi </h4>
+                                                <div class="home--song-item__singer">Trình bày: Binz, Touliver</div>
+                                            </a>
+                                            <div class="home-song-item__action">
+                                                <span class="home-song-item__like home-song-item__like--liked">
+                                                    <i class="fa-regular fa-heart  home-song-item__like--liked-icon-empty"></i>
+                                                    <i class="fa-solid fa-heart home-song-item__like--liked-icon-fill"></i>
+                                                </span>
+                                                <a href="" class="home--song-item-link">
+                                                    <div class="home-song-item__rating">
+                                                        <i class="  fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="home-song-item__category">
+                                                <a href="" class="home-song-item__category-link">Rap</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-song-items">
+                                            <!--song item-->
+                                            <a href="" class="home--song-item-link">
+                                                <div class="home--song-item__img" style="background-image: url(https://th.bing.com/th/id/OIP.4G_g5ynpYCoWJnVKFa6o2gAAAA?w=212&h=119&c=7&r=0&o=5&dpr=1.3&pid=1.7);"></div>
+                                                <h4 class="home--song-item__name">Pink Venom</h4>
+                                                <div class="home--song-item__singer">Trình bày: Black Pink</div>
+                                            </a>
+                                            <div class="home-song-item__action">
+                                                <span class="home-song-item__like home-song-item__like--liked">
+                                                    <i class="fa-regular fa-heart  home-song-item__like--liked-icon-empty"></i>
+                                                    <i class="fa-solid fa-heart home-song-item__like--liked-icon-fill"></i>
+                                                </span>
+                                                <a href="" class="home--song-item-link">
+                                                    <div class="home-song-item__rating">
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="home-song-item__category">
+                                                <a href="" class="home-song-item__category-link">Kpop</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-song-items">
+                                            <!--song item-->
+                                            <a href="" class="home--song-item-link">
+                                                <div class="home--song-item__img" style="background-image: url(https://th.bing.com/th/id/OIP.cLXBQ_9KetzSDAn4TFRElAHaEK?w=318&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);"></div>
+                                                <h4 class="home--song-item__name">Ninimo</h4>
+                                                <div class="home--song-item__singer">Trình bày: PINKFONG</div>
+                                            </a>
+                                            <div class="home-song-item__action">
+                                                <span class="home-song-item__like home-song-item__like--liked">
+                                                    <i class="fa-regular fa-heart  home-song-item__like--liked-icon-empty"></i>
+                                                    <i class="fa-solid fa-heart home-song-item__like--liked-icon-fill"></i>
+                                                </span>
+                                                <a href="" class="home--song-item-link">
+                                                    <div class="home-song-item__rating">
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="home-song-item__category">
+                                                <a href="" class="home-song-item__category-link">Trẻ Em</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-song-items">
+                                            <!--song item-->
+                                            <a href="" class="home--song-item-link">
+                                                <div class="home--song-item__img" style="background-image: url(https://th.bing.com/th/id/OIP.6VoId02WWJuxVRmYB9FMEwAAAA?w=295&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);"></div>
+                                                <h4 class="home--song-item__name">Easy On Me</h4>
+                                                <div class="home--song-item__singer">Trình bày: Adele</div>
+                                            </a>
+                                            <div class="home-song-item__action">
+                                                <span class="home-song-item__like home-song-item__like--liked">
+                                                    <i class="fa-regular fa-heart  home-song-item__like--liked-icon-empty"></i>
+                                                    <i class="fa-solid fa-heart home-song-item__like--liked-icon-fill"></i>
+                                                </span>
+                                                <a href="" class="home--song-item-link">
+                                                    <div class="home-song-item__rating">
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="home-song-item__category">
+                                                <a href="" class="home-song-item__category-link">USUK</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-song-items">
+                                            <!--song item-->
+                                            <a href="" class="home--song-item-link">
+                                                <div class="home--song-item__img" style="background-image: url(https://th.bing.com/th/id/OIP.iqx6javelfHHX_15bPh9egHaHa?w=163&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);"></div>
+                                                <h4 class="home--song-item__name">Hôn Anh</h4>
+                                                <div class="home--song-item__singer">Trình bày: Min</div>
+                                            </a>
+                                            <div class="home-song-item__action">
+                                                <span class="home-song-item__like home-song-item__like--liked">
+                                                    <i class="fa-regular fa-heart  home-song-item__like--liked-icon-empty"></i>
+                                                    <i class="fa-solid fa-heart home-song-item__like--liked-icon-fill"></i>
+                                                </span>
+                                                <a href="" class="home--song-item-link">
+                                                    <div class="home-song-item__rating">
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                        <i class=" fa-solid fa-star"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="home-song-item__category">
+                                                <a href="" class="home-song-item__category-link">Việt Nam</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="pagination home-song__pagination">
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link"><i class="pagination-item__icon fa-solid fa-angle-left"></i></a>
+                                </li>
+                                <li class="pagination-item pagination-item--active">
+                                    <a href="" class="pagination-item__link">1</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">2</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link"><i class="pagination-item__icon fa-solid fa-angle-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-5">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                Kho Âm Nhạc Hotline: 0708079427
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer__list-item__link">
+                                    Kho Âm Nhạc Mail: 0950080034@sv.hcmunre.edu.vn
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                Kho Âm Nhạc Address: 336 Lê Văn Sỹ, phường 1, quận Tân Bình, thành phố: Hồ Chí Minh
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-5">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                Kho Âm Nhạc tự hào là nơi lưu trữ các bài hát đa dạng và chất lượng dành cho người nghe
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-5">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer__list-item__link">
+                                    <i class="footer__list-item__link-icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer__list-item__link">
+                                    <i class="footer__list-item__link-icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-5">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="/assets/img/d91264e165ed6facc6178994d5afae79.png" alt="Download QR" class="footer__download-qr">
+                            <div class="footer__download-apps">
+                                <a href="" class="footer__download-apps__link">
+                                    <img src="/assets/img/39f189e19764dab688d3850742f13718.png" alt="App Store" class="footer__dowload-app-img">
+                                </a>
+                                <a href="" class="footer__download-apps__link">
+                                    <img src="/assets/img/f4f5426ce757aea491dce94201560583.png" alt="Google Play" class="footer__dowload-app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid">
+                    <p class="footer__text"> 2023 - Bản quyền thuộc về Công ty KHN</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--Modal layout-->
+<!--<div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">-->
+                <!--Register form-->
+                <!--<div class="auth-form" id="form-1">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng Ký</h3>
+                            <span class="auth-form__switch-btn">Đăng Nhập</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group invalid">
+                                <input id="fullname" type="text" class="auth-form__input invalid" placeholder="Nhập tên của bạn">
+                                <span class="form-message invalid"></span>
+                            </div>
+                            <div class="auth-form__group ">
+                                <input id="email" type="text" class="auth-form__input invalid" placeholder="Email của bạn">
+                                <span class="form-message invalid"></span>
+                            </div>
+                            <div class="auth-form__group">
+                                <input id="password" type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                                <span class="form-message"></span>
+                            </div>  
+                            <div class="auth-form__group">
+                                <input id="password_confirmation" type="text" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                                <span class="form-message"></span>
+                            </div>                      
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng ký, bạn đã đồng ý với Kho Âm Nhạc
+                                <!--
+                                <a href="" class="auth-form__policy-text-link">Điều khoản dịch vụ</a>
+                                &
+                                <a href="" class="auth-form__policy-text-link">Chính sách bảo mật</a>
+                                
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                            <button class="btn btn--primary btn--disabled">ĐĂNG KÝ</button>
+                        </div>
+                        
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials-fb btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials-gg btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Google
+                            </span>
+                            
+                        </a>
+                    </div>
+                </div> -->
+                <!--Login form-->
+                <!--<div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng Nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng Ký</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>                      
+                        </div>
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__help-link auth-form__help-help">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                            <button class="btn btn--primary btn--disabled">ĐĂNG NHẬP</button>
+                        </div>
+                        
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials-fb btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials-gg btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+        </div>-->
+        <script src="/main.js"></script>
+        <script>
+            //output 
+            Validator({
+                form:"#form-1",
+                errorSelector:'.form-message',
+                rules:[
+                    Validator.isRequired('#fullname','Vui lòng nhập tên của bạn'),
+                    Validator.isRequired('#email'),
+                    Validator.isEmail('#email'),
+                    Validator.minLength('#password',6),
+                    Validator.isRequired('#password_confirmation'),
+                    Validator.isConfirmed('#password_confirmation', function(){
+                        return document.querySelector('#form-1 #password').value;
+                    },'Mật khẩu nhập lại không chính xác')
+                ]
+            });
+        </script>
+    </div>
+</body>
+</html>
